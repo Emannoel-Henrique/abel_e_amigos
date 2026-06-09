@@ -1,0 +1,402 @@
+[
+{
+  "id": 1,
+  "title": "Hambúrguer Clássico do Rato",
+  "description": "Hambúrguer de carne bovina com queijo cheddar, alface e tomate",
+  "price": 15.99,
+  "imageSrc": "/produtos/hamburguer.png",
+  "destaque": false
+},
+{
+  "id": 2,
+  "title": "Chapéu de Aniversário",
+  "description": "Chapéu de festa cônico oficial da banda",
+  "price": 29.99,
+  "imageSrc": "/produtos/chapeu.png",
+  "destaque": false
+},
+{
+  "id": 3,
+  "title": "Presente Surpresa",
+  "description": "Presente especial para festas com um brinde colecionável",
+  "price": 39.99,
+  "imageSrc": "/produtos/presente.png",
+  "destaque": false
+},
+{
+  "id": 4,
+  "title": "Show no Palco Principal",
+  "description": "Show no palco com música e dança com seus melhores amigos robôs",
+  "price": 49.99,
+  "imageSrc": "/produtos/palco.png",
+  "destaque": false
+},
+{
+  "id": 5,
+  "title": "Guitarra do Rato Burguer",
+  "description": "Hambúrguer duplo com muito queijo e molho barbecue especial",
+  "price": 24.99,
+  "imageSrc": "/produtos/rato_burguer.png",
+  "destaque": true
+},
+{
+  "id": 6,
+  "title": "Cupcake do Vini",
+  "description": "Cupcake super colorido sabor baunilha com granulado e uma cereja",
+  "price": 8.99,
+  "imageSrc": "/produtos/cupcake_vini.png",
+  "destaque": true
+},
+{
+  "id": 7,
+  "title": "Fritas do John",
+  "description": "Batatas fritas super crocantes com formato de gancho",
+  "price": 12.50,
+  "imageSrc": "/produtos/fritas_suprema.png",
+  "destaque": false
+},
+  {
+    "id": 8,
+    "title": "Refrigerante Refil Infinito",
+    "description": "Copo colecionável com direito a refil livre durante toda a sua estadia",
+    "price": 14.99,
+    "imageSrc": "/produtos/refil_copo.png",
+    "destaque": false
+  },
+  {
+    "id": 9,
+    "title": "Pizza de Pepperoni de Palco",
+    "description": "Fatia gigante de pizza com bastante queijo e pepperoni",
+    "price": 11.99,
+    "imageSrc": "/produtos/pizza_fatia.png",
+    "destaque": false
+  },
+  {
+    "id": 10,
+    "title": "Combo Astro Pop",
+    "description": "Hambúrguer simples, batata pequena e um suco de caixinha",
+    "price": 22.99,
+    "imageSrc": "/produtos/combo_astro.png",
+    "destaque": false
+  },
+  {
+    "id": 11,
+    "title": "Pelúcia do Vocalista",
+    "description": "Mini pelúcia fofinha do John cantor principal",
+    "price": 59.99,
+    "imageSrc": "/produtos/pelucia_john.png",
+    "destaque": true
+  },
+  {
+    "id": 12,
+    "title": "Fichas de Arcade (Pacote com 20)",
+    "description": "Moedas para jogar nas máquinas de fliperama do salão",
+    "price": 20.00,
+    "imageSrc": "/produtos/fichas_arcade.png",
+    "destaque": false
+  },
+  {
+    "id": 13,
+    "title": "Milkshake de Baunilha Cibernético",
+    "description": "Milkshake cremoso com calda de chiclete azul",
+    "price": 16.50,
+    "imageSrc": "/produtos/milkshake_azul.png",
+    "destaque": false
+  },
+  {
+    "id": 14,
+    "title": "Anéis de Cebola Dourados",
+    "description": "Anéis de cebola empanados e fritos até dourarem",
+    "price": 13.99,
+    "imageSrc": "/produtos/aneis_cebola.png",
+    "destaque": false
+  },
+  {
+    "id": 15,
+    "title": "Hambúrguer Monstro de Ouro",
+    "description": "Triplo hambúrguer, triplo queijo, bacon e molho secreto amarelo",
+    "price": 34.99,
+    "imageSrc": "/produtos/golden_burguer.png",
+    "destaque": true
+  },
+  {
+    "id": 16,
+    "title": "Nuggets Eletrônicos",
+    "description": "10 unidades de nuggets de frango super crocantes",
+    "price": 14.00,
+    "imageSrc": "/produtos/nuggets.png",
+    "destaque": false
+  },
+  {
+    "id": 17,
+    "title": "Camiseta Oficial da Banda",
+    "description": "Camiseta preta com a estampa dos 4 animatrônicos principais",
+    "price": 45.00,
+    "imageSrc": "/produtos/camiseta_banda.png",
+    "destaque": false
+  },
+  {
+    "id": 18,
+    "title": "Suco de Laranja Neon",
+    "description": "Suco de laranja natural servido em um copo que brilha no escuro",
+    "price": 10.99,
+    "imageSrc": "/produtos/suco_neon.png",
+    "destaque": false
+  },
+  {
+    "id": 19,
+    "title": "Sundae do Solo de Bateria",
+    "description": "Sorvete de chocolate com calda quente e tubetes imitando baquetas",
+    "price": 12.99,
+    "imageSrc": "/produtos/sundae_bateria.png",
+    "destaque": false
+  },
+  {
+    "id": 20,
+    "title": "Passaporte VIP de Aniversário",
+    "description": "Acesso à mesa colada no palco e parabéns cantado pelos robôs",
+    "price": 99.99,
+    "imageSrc": "/produtos/passaporte_vip.png",
+    "destaque": true
+  },
+  {
+    "id": 21,
+    "title": "Hambúrguer Vegetariano Sintético",
+    "description": "Hambúrguer de grão-de-bico com maionese vegana e rúcula",
+    "price": 19.99,
+    "imageSrc": "/produtos/burguer_veggie.png",
+    "destaque": false
+  },
+  {
+    "id": 22,
+    "title": "Balão de Gás Hélio Metalizado",
+    "description": "Balão grande com o rosto do seu personagem favorito",
+    "price": 15.00,
+    "imageSrc": "/produtos/balao.png",
+    "destaque": false
+  },
+  {
+    "id": 23,
+    "title": "Hot Dog do Técnico",
+    "description": "Cachorro-quente com duas salsichas, purê e batata palha",
+    "price": 14.50,
+    "imageSrc": "/produtos/hotdog.png",
+    "destaque": false
+  },
+  {
+    "id": 24,
+    "title": "Mini Pizzas de Festa (Porção)",
+    "description": "6 mini pizzas variadas para compartilhar",
+    "price": 26.99,
+    "imageSrc": "/produtos/mini_pizzas.png",
+    "destaque": false
+  },
+  {
+    "id": 25,
+    "title": "Caneca de Porcelana Retrô",
+    "description": "Caneca vintage com o logotipo clássico da lanchonete",
+    "price": 24.99,
+    "imageSrc": "/produtos/caneca.png",
+    "destaque": false
+  },
+  {
+    "id": 26,
+    "title": "Milkshake de Morango do Microfone",
+    "description": "Milkshake sabor morango com chantilly e glitter comestível",
+    "price": 16.50,
+    "imageSrc": "/produtos/milkshake_morango.png",
+    "destaque": false
+  },
+  {
+    "id": 27,
+    "title": "Hambúrguer Picante do Foxy",
+    "description": "Hambúrguer com queijo provolone, bacon e geleia de pimenta defumada",
+    "price": 26.50,
+    "imageSrc": "/produtos/foxy_spicy.png",
+    "destaque": false
+  },
+  {
+    "id": 28,
+    "title": "Batata Frita Suprema com Queijo e Bacon",
+    "description": "Porção grande de fritas cobertas com muito cheddar derretido e bacon",
+    "price": 22.90,
+    "imageSrc": "/produtos/fritas_suprema.png",
+    "destaque": true
+  },
+  {
+    "id": 29,
+    "title": "Chaveiro Emborrachado",
+    "description": "Chaveiro oficial colecionável com a cabeça de um dos robôs",
+    "price": 9.99,
+    "imageSrc": "/produtos/chaveiro.png",
+    "destaque": false
+  },
+  {
+    "id": 30,
+    "title": "Picolé Laser",
+    "description": "Picolé de frutas tropicais que muda de cor na boca",
+    "price": 6.50,
+    "imageSrc": "/produtos/picole.png",
+    "destaque": false
+  },
+  {
+    "id": 31,
+    "title": "Combo Show de Sabores",
+    "description": "Hambúrguer Clássico, Batata Frita e Milkshake à sua escolha",
+    "price": 39.99,
+    "imageSrc": "/produtos/combo_show.png",
+    "destaque": false
+  },
+  {
+    "id": 32,
+    "title": "Boné Aba Reta Holográfico",
+    "description": "Boné moderno com logo que brilha dependendo da luz",
+    "price": 35.00,
+    "imageSrc": "/produtos/bone.png",
+    "destaque": false
+  },
+  {
+    "id": 33,
+    "title": "Waffle da Cozinha da Chica",
+    "description": "Waffle quentinho em formato de estrela servido com mel e frutas",
+    "price": 14.99,
+    "imageSrc": "/produtos/waffle.png",
+    "destaque": false
+  },
+  {
+    "id": 34,
+    "title": "Água Mineral do Palco",
+    "description": "Garrafa de água personalizada com tampa esportiva",
+    "price": 4.50,
+    "imageSrc": "/produtos/agua.png",
+    "destaque": false
+  },
+  {
+    "id": 35,
+    "title": "Torta de Maçã Caseira",
+    "description": "Fatia de torta de maçã quentinha com uma bola de sorvete",
+    "price": 13.50,
+    "imageSrc": "/produtos/torta_maca.png",
+    "destaque": false
+  },
+  {
+    "id": 36,
+    "title": "Hambúrguer de Frango da Chica",
+    "description": "Frango empanado super crocante, alface, maionese e picles",
+    "price": 18.99,
+    "imageSrc": "/produtos/chica_chicken.png",
+    "destaque": false
+  },
+  {
+    "id": 37,
+    "title": "Kit de Adesivos Neon",
+    "description": "Cartela com 10 adesivos que brilham sob luz negra",
+    "price": 7.99,
+    "imageSrc": "/produtos/adesivos.png",
+    "destaque": false
+  },
+  {
+    "id": 38,
+    "title": "Molho Secreto do Chef (Pote)",
+    "description": "Pote adicional do nosso molho especial para levar para casa",
+    "price": 5.00,
+    "imageSrc": "/produtos/molho_pote.png",
+    "destaque": false
+  },
+  {
+    "id": 39,
+    "title": "Milkshake de Ovomaltine do Ritmo",
+    "description": "Milkshake cremoso batido com muito Ovomaltine e calda de chocolate",
+    "price": 17.50,
+    "imageSrc": "/produtos/milkshake_ovomaltine.png",
+    "destaque": false
+  },
+  {
+    "id": 40,
+    "title": "Mini Hambúrgueres de Festa (Balde)",
+    "description": "Balde com 8 mini hambúrgueres variados para dividir com a galera",
+    "price": 42.00,
+    "imageSrc": "/produtos/balde_mini.png",
+    "destaque": false
+  },
+  {
+    "id": 41,
+    "title": "Tirinhas de Frango Crocantes",
+    "description": "Porção de tiras de peito de frango empanadas com molho barbecue",
+    "price": 16.99,
+    "imageSrc": "/produtos/tiras_frango.png",
+    "destaque": false
+  },
+  {
+    "id": 42,
+    "title": "Óculos de Sol Retrô",
+    "description": "Óculos de sol divertidos neon no estilo dos anos 80",
+    "price": 19.99,
+    "imageSrc": "/produtos/oculos.png",
+    "destaque": false
+  },
+  {
+    "id": 43,
+    "title": "Hambúrguer de Costela Defumada",
+    "description": "Hambúrguer de costela bovina, queijo prato e cebola caramelizada",
+    "price": 28.99,
+    "imageSrc": "/produtos/burguer_costela.png",
+    "destaque": false
+  },
+  {
+    "id": 44,
+    "title": "Brownie do Backstage",
+    "description": "Brownie de chocolate meio amargo com pedaços de nozes",
+    "price": 9.50,
+    "imageSrc": "/produtos/brownie.png",
+    "destaque": false
+  },
+  {
+    "id": 45,
+    "title": "Suco de Uva Galáctico",
+    "description": "Suco natural de uva integral bem gelado",
+    "price": 8.50,
+    "imageSrc": "/produtos/suco_uva.png",
+    "destaque": false
+  },
+  {
+    "id": 46,
+    "title": "Almofada de Assento Personalizada",
+    "description": "Almofada confortável para cadeiras com estampa quadriculada da lanchonete",
+    "price": 32.00,
+    "imageSrc": "/produtos/almofada.png",
+    "destaque": false
+  },
+  {
+    "id": 47,
+    "title": "Hambúrguer Quatro Queijos do Acorde",
+    "description": "Hambúrguer bovino coberto com cheddar, mussarela, catupiry e gorgonzola",
+    "price": 27.50,
+    "imageSrc": "/produtos/burguer_queijos.png",
+    "destaque": false
+  },
+  {
+    "id": 48,
+    "title": "Pão de Alho Especial do Palco",
+    "description": "Porção com 4 unidades de pão de alho super recheados e tostados",
+    "price": 11.99,
+    "imageSrc": "/produtos/pao_alho.png",
+    "destaque": false
+  },
+  {
+    "id": 49,
+    "title": "Poster Oficial Autografado",
+    "description": "Poster grande da banda com assinaturas impressas dos animatrônicos",
+    "price": 18.00,
+    "imageSrc": "/produtos/poster.png",
+    "destaque": false
+  },
+  {
+    "id": 50,
+    "title": "Mega Combo Animatrônico Gigante",
+    "description": "2 Hambúrgueres Duplos, 2 Batatas Grandes, 2 Refrigerantes Refil e 1 Brinde Surpresa",
+    "price": 79.99,
+    "imageSrc": "/produtos/mega_combo.png",
+    "destaque": false
+  }
+]
