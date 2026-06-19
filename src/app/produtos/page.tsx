@@ -84,85 +84,87 @@ export default function Produtos() {
   const totalDestaques = produtosBase.filter((produto) => produto.destaque).length
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#fff7ed]">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.35),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(239,68,68,0.16),transparent_30%),linear-gradient(180deg,#fff7ed_0%,#ffffff_48%,#f8fafc_100%)]" />
+    <main className="relative min-h-screen overflow-hidden bg-[#120907] text-white">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(251,191,36,0.28),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(239,68,68,0.22),transparent_28%),linear-gradient(180deg,#120907_0%,#1d0f0a_45%,#070303_100%)]" />
+      <div className="absolute inset-0 -z-10 opacity-[0.08] bg-[linear-gradient(45deg,#fff_1px,transparent_1px),linear-gradient(-45deg,#fff_1px,transparent_1px)] bg-[size:34px_34px]" />
 
-      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-        <header className="overflow-hidden rounded-[2rem] bg-slate-950 shadow-2xl shadow-slate-900/20">
-          <div className="relative px-6 py-10 sm:px-10 lg:px-12">
-            <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,#f59e0b,transparent_28%),radial-gradient(circle_at_85%_10%,#ef4444,transparent_30%)]" />
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+        <header className="rounded-[2rem] border border-amber-400/20 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_340px] lg:items-end">
+            <div>
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-black text-[#160b08]">
+                <Sparkles className="h-4 w-4" />
+                Cardápio oficial
+              </div>
 
-            <div className="relative grid gap-8 lg:grid-cols-[1fr_360px] lg:items-end">
-              <div>
-                <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-amber-300 ring-1 ring-white/15">
-                  <Sparkles className="h-4 w-4" />
-                  Cardápio oficial
-                </div>
+              <h1 className="max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Cardápio e atrações do Rato Burguer
+              </h1>
 
-                <h1 className="max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl">
-                  Cardápio e atrações do Rato Burguer
-                </h1>
+              <p className="mt-5 max-w-2xl text-base leading-7 text-amber-100/75 sm:text-lg">
+                Lanches, bebidas, doces e lembranças para transformar sua visita
+                em uma experiência animatrônica de respeito.
+              </p>
+            </div>
 
-                <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-                  Lanches, bebidas, doces e lembranças para transformar sua visita
-                  em uma experiência de respeito. O queijo tremeu aqui.
+            <div className="grid grid-cols-2 gap-3">
+              <div className="rounded-3xl border border-white/10 bg-black/25 p-5">
+                <p className="text-3xl font-black text-white">
+                  {produtosBase.length}
+                </p>
+                <p className="mt-1 text-sm font-semibold text-amber-100/70">
+                  produtos
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-3xl bg-white/10 p-5 ring-1 ring-white/15">
-                  <p className="text-3xl font-black text-white">
-                    {produtosBase.length}
-                  </p>
-                  <p className="mt-1 text-sm font-semibold text-slate-300">
-                    produtos
-                  </p>
-                </div>
-
-                <div className="rounded-3xl bg-amber-400 p-5 text-slate-950">
-                  <p className="text-3xl font-black">{totalDestaques}</p>
-                  <p className="mt-1 text-sm font-black">
-                    destaques
-                  </p>
-                </div>
+              <div className="rounded-3xl bg-amber-400 p-5 text-[#160b08]">
+                <p className="text-3xl font-black">{totalDestaques}</p>
+                <p className="mt-1 text-sm font-black">destaques</p>
               </div>
             </div>
           </div>
         </header>
 
-        <section className="relative z-10 -mt-8 rounded-[2rem] border border-white/70 bg-white/90 p-5 shadow-xl shadow-orange-950/10 backdrop-blur sm:p-6">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+        <section className="relative z-10 mt-6 rounded-[2rem] border border-amber-400/20 bg-[#1d0f0a]/90 p-4 shadow-xl shadow-black/25 backdrop-blur-xl sm:p-6">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative flex-1">
-              <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
+              <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-amber-300" />
+
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Pesquisar por lanche, bebida, sobremesa..."
-                className="h-13 w-full rounded-2xl border border-slate-200 bg-slate-50 pl-12 pr-4 text-sm font-medium text-slate-900 outline-none transition focus:border-amber-400 focus:bg-white focus:ring-4 focus:ring-amber-200/60"
+                className="h-13 w-full rounded-2xl border border-white/10 bg-black/25 pl-12 pr-4 text-sm font-semibold text-white outline-none transition placeholder:text-amber-100/40 focus:border-amber-400 focus:ring-4 focus:ring-amber-400/20"
               />
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
-                <SlidersHorizontal className="h-4 w-4 text-slate-500" />
+              <div className="flex h-13 items-center gap-2 rounded-2xl border border-white/10 bg-black/25 px-4">
+                <SlidersHorizontal className="h-4 w-4 text-amber-300" />
 
                 <select
                   id="ordenar-preco"
                   value={ordenacaoPreco}
                   onChange={(e) => setOrdenacaoPreco(e.target.value)}
-                  className="bg-transparent text-sm font-bold text-slate-800 outline-none"
+                  className="w-full bg-transparent text-sm font-black text-white outline-none"
                 >
-                  <option value="relevante">Mais relevantes</option>
-                  <option value="menor-preco">Menor preço</option>
-                  <option value="maior-preco">Maior preço</option>
+                  <option className="text-black" value="relevante">
+                    Mais relevantes
+                  </option>
+                  <option className="text-black" value="menor-preco">
+                    Menor preço
+                  </option>
+                  <option className="text-black" value="maior-preco">
+                    Maior preço
+                  </option>
                 </select>
               </div>
 
               {filtrosAtivos && (
                 <button
                   onClick={limparFiltros}
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-black text-slate-700 transition hover:-translate-y-0.5 hover:bg-slate-950 hover:text-white"
+                  className="inline-flex h-13 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 text-sm font-black text-white transition hover:bg-amber-400 hover:text-[#160b08]"
                 >
                   <RotateCcw className="h-4 w-4" />
                   Limpar
@@ -171,7 +173,7 @@ export default function Produtos() {
             </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-2 border-t border-slate-100 pt-6">
+          <div className="mt-6 flex gap-2 overflow-x-auto border-t border-white/10 pt-5 pb-1 sm:flex-wrap sm:overflow-visible">
             {listaCategorias.map((categoria) => {
               const Icon = categoria.icon
               const isActive = categoriaSelecionada === categoria.nome
@@ -181,10 +183,10 @@ export default function Produtos() {
                 <button
                   key={categoria.nome}
                   onClick={() => setCategoriaSelecionada(categoria.nome)}
-                  className={`group inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-black transition-all ${
+                  className={`inline-flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-xs font-black transition-all ${
                     isActive
-                      ? "bg-slate-950 text-white shadow-lg shadow-slate-900/20"
-                      : "bg-slate-100 text-slate-600 hover:-translate-y-0.5 hover:bg-amber-100 hover:text-amber-950"
+                      ? "bg-amber-400 text-[#160b08] shadow-lg shadow-amber-950/30"
+                      : "bg-white/10 text-amber-100 hover:bg-white/15"
                   }`}
                 >
                   <Icon className="h-3.5 w-3.5" />
@@ -192,8 +194,8 @@ export default function Produtos() {
                   <span
                     className={`rounded-full px-2 py-0.5 text-[10px] ${
                       isActive
-                        ? "bg-white/15 text-white"
-                        : "bg-white text-slate-500"
+                        ? "bg-[#160b08]/15 text-[#160b08]"
+                        : "bg-black/25 text-amber-100"
                     }`}
                   >
                     {totalItens}
@@ -206,24 +208,25 @@ export default function Produtos() {
 
         <div className="mb-6 mt-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-amber-700">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-amber-300">
               Resultado
             </p>
-            <h2 className="mt-1 text-2xl font-black text-slate-950">
+
+            <h2 className="mt-1 text-2xl font-black text-white">
               {produtosOrdenados.length === 1
                 ? "1 produto encontrado"
                 : `${produtosOrdenados.length} produtos encontrados`}
             </h2>
           </div>
 
-          <p className="max-w-md text-sm text-slate-500">
-            Clique nas categorias para navegar pelo cardápio sem se perder no
-            labirinto do queijo.
+          <p className="max-w-md text-sm text-amber-100/55">
+            No celular, deslize as categorias para o lado. O rato deixou tudo
+            responsivo, finalmente trabalhando direito.
           </p>
         </div>
 
         {produtosOrdenados.length > 0 ? (
-          <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {produtosOrdenados.map((produto) => (
               <CardProduto
                 key={produto.id}
@@ -237,23 +240,23 @@ export default function Produtos() {
             ))}
           </section>
         ) : (
-          <section className="rounded-[2rem] border border-white/70 bg-white p-10 text-center shadow-xl shadow-orange-950/5">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-3xl bg-amber-100 text-3xl">
+          <section className="rounded-[2rem] border border-amber-400/20 bg-[#1d0f0a]/90 p-8 text-center shadow-xl shadow-black/25 sm:p-10">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-3xl bg-amber-400 text-3xl">
               🐭
             </div>
 
-            <h3 className="mt-5 text-2xl font-black text-slate-950">
+            <h3 className="mt-5 text-2xl font-black text-white">
               Nenhum produto encontrado
             </h3>
 
-            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-slate-500">
+            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-amber-100/60">
               Não encontramos nada com esse filtro. O rato procurou no estoque,
               na cozinha e até atrás da geladeira.
             </p>
 
             <button
               onClick={limparFiltros}
-              className="mt-6 rounded-2xl bg-slate-950 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-amber-500 hover:text-slate-950"
+              className="mt-6 rounded-2xl bg-amber-400 px-6 py-3 text-sm font-black text-[#160b08] transition hover:bg-white"
             >
               Ver todos os produtos
             </button>
