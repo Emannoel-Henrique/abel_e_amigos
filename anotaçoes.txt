@@ -1,0 +1,53 @@
+use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import [useState] from "react";
+import [ Menu, X ] from "lucide-react";
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(boolean)(false);
+
+  return (
+    <header className="w-full h-16 bg-white border-b border-slate-200 px-36 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/logo/logo.png"
+            alt="Logo da empresa"
+            width={50}
+            height={50}
+            className="h-8 w-auto object-contain"
+          />
+          <h1 className="text-lg font-bold text-blue-600">
+            Abel e amigos
+          </h1>
+        </div>
+
+
+<nav className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-slate-200 shadow-lg px-6 py-4 flex flex-col space-y-4 z-40">
+          <Link
+            href="/"
+            onClick={() => setIsOpen(false)}
+            className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+          >
+            Home
+          </Link>
+          <Link
+            href="/produtos"
+            onClick={() => setIsOpen(false)}
+            className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+          >
+            Produtos
+          </Link>
+          <Link
+            href="/contato"
+            onClick={() => setIsOpen(false)}
+            className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+          >
+            Contato
+          </Link>
+        </nav>
+
+    </header>
+  );
+}

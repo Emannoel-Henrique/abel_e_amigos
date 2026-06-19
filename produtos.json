@@ -1,67 +1,75 @@
 [
-{
-  "id": 1,
-  "title": "Hambúrguer Clássico do Rato",
-  "description": "Hambúrguer de carne bovina com queijo cheddar, alface e tomate",
-  "price": 15.99,
-  "imageSrc": "/produtos/hamburguer.png",
-  "destaque": false
-},
-{
-  "id": 2,
-  "title": "Chapéu de Aniversário",
-  "description": "Chapéu de festa cônico oficial da banda",
-  "price": 29.99,
-  "imageSrc": "/produtos/chapeu.png",
-  "destaque": false
-},
-{
-  "id": 3,
-  "title": "Presente Surpresa",
-  "description": "Presente especial para festas com um brinde colecionável",
-  "price": 39.99,
-  "imageSrc": "/produtos/presente.png",
-  "destaque": false
-},
-{
-  "id": 4,
-  "title": "Show no Palco Principal",
-  "description": "Show no palco com música e dança com seus melhores amigos robôs",
-  "price": 49.99,
-  "imageSrc": "/produtos/palco.png",
-  "destaque": false
-},
-{
-  "id": 5,
-  "title": "Guitarra do Rato Burguer",
-  "description": "Hambúrguer duplo com muito queijo e molho barbecue especial",
-  "price": 24.99,
-  "imageSrc": "/produtos/rato_burguer.png",
-  "destaque": true
-},
-{
-  "id": 6,
-  "title": "Cupcake do Vini",
-  "description": "Cupcake super colorido sabor baunilha com granulado e uma cereja",
-  "price": 8.99,
-  "imageSrc": "/produtos/cupcake_vini.png",
-  "destaque": true
-},
-{
-  "id": 7,
-  "title": "Fritas do John",
-  "description": "Batatas fritas super crocantes com formato de gancho",
-  "price": 12.50,
-  "imageSrc": "/produtos/fritas_suprema.png",
-  "destaque": false
-},
+  {
+    "id": 1,
+    "title": "Hambúrguer Clássico do Rato",
+    "description": "Hambúrguer de carne bovina com queijo cheddar, alface e tomate",
+    "price": 15.99,
+    "imageSrc": "/produtos/hamburguer.png",
+    "destaque": false,
+    "categoria": "Lanches"
+  },
+  {
+    "id": 2,
+    "title": "Chapéu de Aniversário",
+    "description": "Chapéu de festa cônico oficial da banda",
+    "price": 29.99,
+    "imageSrc": "/produtos/chapeu.png",
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
+  },
+  {
+    "id": 3,
+    "title": "Presente Surpresa",
+    "description": "Presente especial para festas com um brinde colecionável",
+    "price": 39.99,
+    "imageSrc": "/produtos/presente.png",
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
+  },
+  {
+    "id": 4,
+    "title": "Show no Palco Principal",
+    "description": "Show no palco com música e dança com seus melhores amigos robôs",
+    "price": 49.99,
+    "imageSrc": "/produtos/palco.png",
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
+  },
+  {
+    "id": 5,
+    "title": "Guitarra do Rato Burguer",
+    "description": "Hambúrguer duplo com muito queijo e molho barbecue especial",
+    "price": 24.99,
+    "imageSrc": "/produtos/rato_burguer.png",
+    "destaque": true,
+    "categoria": "Lanches"
+  },
+  {
+    "id": 6,
+    "title": "Cupcake do Vini",
+    "description": "Cupcake super colorido sabor baunilha com granulado e uma cereja",
+    "price": 8.99,
+    "imageSrc": "/produtos/cupcake_vini.png",
+    "destaque": true,
+    "categoria": "Sobremesas"
+  },
+  {
+    "id": 7,
+    "title": "Fritas do John",
+    "description": "Batatas fritas super crocantes com formato de gancho",
+    "price": 12.50,
+    "imageSrc": "/produtos/fritas_suprema.png",
+    "destaque": false,
+    "categoria": "Acompanhamentos"
+  },
   {
     "id": 8,
     "title": "Refrigerante Refil Infinito",
     "description": "Copo colecionável com direito a refil livre durante toda a sua estadia",
     "price": 14.99,
     "imageSrc": "/produtos/refil_copo.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "Fatia gigante de pizza com bastante queijo e pepperoni",
     "price": 11.99,
     "imageSrc": "/produtos/pizza_fatia.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "Hambúrguer simples, batata pequena e um suco de caixinha",
     "price": 22.99,
     "imageSrc": "/produtos/combo_astro.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "description": "Mini pelúcia fofinha do John cantor principal",
     "price": 59.99,
     "imageSrc": "/produtos/pelucia_john.png",
-    "destaque": true
+    "destaque": true,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "description": "Moedas para jogar nas máquinas de fliperama do salão",
     "price": 20.00,
     "imageSrc": "/produtos/fichas_arcade.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "description": "Milkshake cremoso com calda de chiclete azul",
     "price": 16.50,
     "imageSrc": "/produtos/milkshake_azul.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "description": "Anéis de cebola empanados e fritos até dourarem",
     "price": 13.99,
     "imageSrc": "/produtos/aneis_cebola.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "description": "Triplo hambúrguer, triplo queijo, bacon e molho secreto amarelo",
     "price": 34.99,
     "imageSrc": "/produtos/golden_burguer.png",
-    "destaque": true
+    "destaque": true,
+    "categoria": "Lanches"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "description": "10 unidades de nuggets de frango super crocantes",
     "price": 14.00,
     "imageSrc": "/produtos/nuggets.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "description": "Camiseta preta com a estampa dos 4 animatrônicos principais",
     "price": 45.00,
     "imageSrc": "/produtos/camiseta_banda.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "description": "Suco de laranja natural servido em um copo que brilha no escuro",
     "price": 10.99,
     "imageSrc": "/produtos/suco_neon.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "description": "Sorvete de chocolate com calda quente e tubetes imitando baquetas",
     "price": 12.99,
     "imageSrc": "/produtos/sundae_bateria.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Sobremesas"
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "description": "Acesso à mesa colada no palco e parabéns cantado pelos robôs",
     "price": 99.99,
     "imageSrc": "/produtos/passaporte_vip.png",
-    "destaque": true
+    "destaque": true,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "description": "Hambúrguer de grão-de-bico com maionese vegana e rúcula",
     "price": 19.99,
     "imageSrc": "/produtos/burguer_veggie.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "description": "Balão grande com o rosto do seu personagem favorito",
     "price": 15.00,
     "imageSrc": "/produtos/balao.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "description": "Cachorro-quente com duas salsichas, purê e batata palha",
     "price": 14.50,
     "imageSrc": "/produtos/hotdog.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "description": "6 mini pizzas variadas para compartilhar",
     "price": 26.99,
     "imageSrc": "/produtos/mini_pizzas.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "description": "Caneca vintage com o logotipo clássico da lanchonete",
     "price": 24.99,
     "imageSrc": "/produtos/caneca.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "description": "Milkshake sabor morango com chantilly e glitter comestível",
     "price": 16.50,
     "imageSrc": "/produtos/milkshake_morango.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "description": "Hambúrguer com queijo provolone, bacon e geleia de pimenta defumada",
     "price": 26.50,
     "imageSrc": "/produtos/foxy_spicy.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "description": "Porção grande de fritas cobertas com muito cheddar derretido e bacon",
     "price": 22.90,
     "imageSrc": "/produtos/fritas_suprema.png",
-    "destaque": true
+    "destaque": true,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "description": "Chaveiro oficial colecionável com a cabeça de um dos robôs",
     "price": 9.99,
     "imageSrc": "/produtos/chaveiro.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "description": "Picolé de frutas tropicais que muda de cor na boca",
     "price": 6.50,
     "imageSrc": "/produtos/picole.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Sobremesas"
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "description": "Hambúrguer Clássico, Batata Frita e Milkshake à sua escolha",
     "price": 39.99,
     "imageSrc": "/produtos/combo_show.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "description": "Boné moderno com logo que brilha dependendo da luz",
     "price": 35.00,
     "imageSrc": "/produtos/bone.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "description": "Waffle quentinho em formato de estrela servido com mel e frutas",
     "price": 14.99,
     "imageSrc": "/produtos/waffle.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Sobremesas"
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "description": "Garrafa de água personalizada com tampa esportiva",
     "price": 4.50,
     "imageSrc": "/produtos/agua.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "description": "Fatia de torta de maçã quentinha com uma bola de sorvete",
     "price": 13.50,
     "imageSrc": "/produtos/torta_maca.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Sobremesas"
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "description": "Frango empanado super crocante, alface, maionese e picles",
     "price": 18.99,
     "imageSrc": "/produtos/chica_chicken.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "description": "Cartela com 10 adesivos que brilham sob luz negra",
     "price": 7.99,
     "imageSrc": "/produtos/adesivos.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@
     "description": "Pote adicional do nosso molho especial para levar para casa",
     "price": 5.00,
     "imageSrc": "/produtos/molho_pote.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@
     "description": "Milkshake cremoso batido com muito Ovomaltine e calda de chocolate",
     "price": 17.50,
     "imageSrc": "/produtos/milkshake_ovomaltine.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@
     "description": "Balde com 8 mini hambúrgueres variados para dividir com a galera",
     "price": 42.00,
     "imageSrc": "/produtos/balde_mini.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@
     "description": "Porção de tiras de peito de frango empanadas com molho barbecue",
     "price": 16.99,
     "imageSrc": "/produtos/tiras_frango.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@
     "description": "Óculos de sol divertidos neon no estilo dos anos 80",
     "price": 19.99,
     "imageSrc": "/produtos/oculos.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@
     "description": "Hambúrguer de costela bovina, queijo prato e cebola caramelizada",
     "price": 28.99,
     "imageSrc": "/produtos/burguer_costela.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@
     "description": "Brownie de chocolate meio amargo com pedaços de nozes",
     "price": 9.50,
     "imageSrc": "/produtos/brownie.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Sobremesas"
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@
     "description": "Suco natural de uva integral bem gelado",
     "price": 8.50,
     "imageSrc": "/produtos/suco_uva.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Bebidas"
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@
     "description": "Almofada confortável para cadeiras com estampa quadriculada da lanchonete",
     "price": 32.00,
     "imageSrc": "/produtos/almofada.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@
     "description": "Hambúrguer bovino coberto com cheddar, mussarela, catupiry e gorgonzola",
     "price": 27.50,
     "imageSrc": "/produtos/burguer_queijos.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@
     "description": "Porção com 4 unidades de pão de alho super recheados e tostados",
     "price": 11.99,
     "imageSrc": "/produtos/pao_alho.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Acompanhamentos"
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@
     "description": "Poster grande da banda com assinaturas impressas dos animatrônicos",
     "price": 18.00,
     "imageSrc": "/produtos/poster.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lembranças & Experiências"
   },
   {
     "id": 50,
@@ -397,6 +446,7 @@
     "description": "2 Hambúrgueres Duplos, 2 Batatas Grandes, 2 Refrigerantes Refil e 1 Brinde Surpresa",
     "price": 79.99,
     "imageSrc": "/produtos/mega_combo.png",
-    "destaque": false
+    "destaque": false,
+    "categoria": "Lanches"
   }
 ]

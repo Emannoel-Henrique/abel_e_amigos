@@ -6,18 +6,52 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Phone, MapPin } from "lucide-react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  Clock,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Send,
+  Sparkles,
+} from "lucide-react"
 
-// Importação Dinâmica de MapaContato com SSR desabilitado (ssr: false)
 const MapaContato = dynamic(() => import("@/components/MapaContato"), {
   ssr: false,
   loading: () => (
-    <div className="h-[300px] w-full bg-slate-100 flex items-center justify-center text-slate-500 font-medium">
+    <div className="flex h-[340px] w-full items-center justify-center bg-gradient-to-br from-amber-100 via-orange-50 to-red-100 text-sm font-semibold text-amber-900">
       Carregando mapa...
     </div>
   ),
 })
+
+const canais = [
+  {
+    titulo: "E-mail",
+    valor: "contato@abeleamigos.com.br",
+    descricao: "Respondemos rapidinho",
+    icon: Mail,
+  },
+  {
+    titulo: "Telefone",
+    valor: "(11) 4002-8922",
+    descricao: "Segunda a sábado",
+    icon: Phone,
+  },
+  {
+    titulo: "Endereço",
+    valor: "Av. Paulista, 1000 - São Paulo, SP",
+    descricao: "Venha visitar a toca",
+    icon: MapPin,
+  },
+]
 
 export default function Contato() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,191 +60,244 @@ export default function Contato() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <main className="relative min-h-screen overflow-hidden bg-[#fff7ed]">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.35),transparent_35%),radial-gradient(circle_at_top_right,rgba(239,68,68,0.18),transparent_32%),linear-gradient(180deg,#fff7ed_0%,#fff_45%,#f8fafc_100%)]" />
 
-        {/* Cabeçalho Principal */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-slate-800 tracking-tight">
-            Fale Conosco
-          </h1>
-          <p className="text-slate-500 mt-3 text-lg">
-            Tem alguma dúvida, sugestão ou quer apenas dar um oi? Estamos prontos para atender você.
-          </p>
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[1fr_420px] lg:items-end">
+          <div>
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-4 py-2 text-sm font-bold text-amber-900 shadow-sm backdrop-blur">
+              <Sparkles className="h-4 w-4 text-amber-600" />
+              Atendimento Abel e Amigos
+            </div>
+
+            <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              Fale com a gente e entre no clima da hamburgueria.
+            </h1>
+
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+              Dúvidas sobre produtos, reservas, eventos ou sugestões? Manda sua
+              mensagem que nossa equipe responde antes do rato roubar o queijo.
+            </p>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <span className="rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white shadow-lg shadow-slate-900/20">
+                Atendimento rápido
+              </span>
+              <span className="rounded-full border border-amber-200 bg-white px-4 py-2 text-sm font-bold text-amber-900">
+                Loja temática
+              </span>
+              <span className="rounded-full border border-orange-200 bg-white px-4 py-2 text-sm font-bold text-orange-900">
+                Animatronic Burgers
+              </span>
+            </div>
+          </div>
+
+          <Card className="border-0 bg-slate-950 p-0 text-white shadow-2xl shadow-slate-900/20">
+            <CardContent className="p-6">
+              <div className="flex items-start gap-4">
+                <div className="rounded-2xl bg-amber-400 p-3 text-slate-950">
+                  <Clock className="h-6 w-6" />
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-amber-300">
+                    Horário de atendimento
+                  </p>
+                  <h2 className="mt-1 text-2xl font-black">
+                    Seg. a Sáb. das 10h às 22h
+                  </h2>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    Domingos e feriados com programação especial. A banda dos
+                    bichinhos toca quando o hambúrguer fica pronto.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Grid Principal: 1 Coluna em dispositivos móveis | 2 Colunas em telas largas */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-          {/* Coluna Esquerda: Informações e Mapa */}
-          <div className="space-y-8">
-
-            {/* Canais de Atendimento e Redes Sociais */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-slate-800">
-                  Canais de Atendimento
+        <div className="mt-10 grid gap-7 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="space-y-7">
+            <Card className="border-white/70 bg-white/90 p-0 shadow-xl shadow-orange-950/5 backdrop-blur">
+              <CardHeader className="p-6 pb-2">
+                <CardTitle className="text-2xl font-black text-slate-950">
+                  Canais de atendimento
                 </CardTitle>
-                <CardDescription>
-                  Entre em contato diretamente através dos nossos telefones, e-mail ou redes sociais.
+                <CardDescription className="text-slate-600">
+                  Escolha o melhor jeito de falar com a nossa equipe.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
 
-                {/* Lista de Contatos */}
-                <div className="space-y-4">
+              <CardContent className="space-y-4 p-6">
+                {canais.map((canal) => {
+                  const Icon = canal.icon
 
-                  {/* E-mail */}
-                  <div className="flex items-center space-x-4 text-slate-600">
-                    <div className="p-3 bg-slate-100 rounded-full">
-                      <Mail className="h-5 w-5 text-slate-700" />
+                  return (
+                    <div
+                      key={canal.titulo}
+                      className="group flex items-center gap-4 rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-amber-50/60 p-4 transition-all hover:-translate-y-1 hover:border-amber-200 hover:shadow-lg hover:shadow-amber-900/10"
+                    >
+                      <div className="rounded-2xl bg-slate-950 p-3 text-amber-300 transition-transform group-hover:rotate-3 group-hover:scale-105">
+                        <Icon className="h-5 w-5" />
+                      </div>
+
+                      <div className="min-w-0">
+                        <p className="text-sm font-bold text-slate-950">
+                          {canal.titulo}
+                        </p>
+                        <p className="break-words text-sm font-semibold text-slate-700">
+                          {canal.valor}
+                        </p>
+                        <p className="text-xs text-slate-500">
+                          {canal.descricao}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-sm font-semibold text-slate-500">E-mail</p>
-                      <p className="text-slate-800 font-medium text-sm">contato@papelariarabisco.com.br</p>
-                    </div>
+                  )
+                })}
+
+                <div className="rounded-3xl bg-slate-950 p-5 text-white">
+                  <div className="flex items-center gap-3">
+                    <MessageCircle className="h-5 w-5 text-amber-300" />
+                    <p className="font-black">Redes sociais</p>
                   </div>
 
-                  {/* Telefones */}
-                  <div className="flex items-center space-x-4 text-slate-600">
-                    <div className="p-3 bg-slate-100 rounded-full">
-                      <Phone className="h-5 w-5 text-slate-700" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-slate-500">Telefones</p>
-                      <p className="text-slate-800 font-medium">(11) 4002-8922 / (11) 99999-8888</p>
-                    </div>
-                  </div>
-
-                  {/* Endereço Físico */}
-                  <div className="flex items-center space-x-4 text-slate-600">
-                    <div className="p-3 bg-slate-100 rounded-full">
-                      <MapPin className="h-5 w-5 text-slate-700" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-slate-500">Endereço</p>
-                      <p className="text-slate-800 font-medium">Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <hr className="border-slate-200" />
-
-                {/* Bloco de Redes Sociais com Ícones SVG Robustos */}
-                <div>
-                  <p className="text-sm font-semibold text-slate-500 mb-3">Redes Sociais</p>
-                  <div className="flex space-x-4">
-
-                    {/* Instagram */}
+                  <div className="mt-4 flex flex-wrap gap-3">
                     <a
-                      href="<https://instagram.com>"
+                      href="https://instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors text-slate-700 inline-block"
+                      className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white transition hover:bg-amber-400 hover:text-slate-950"
                     >
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                      </svg>
+                      Instagram
                     </a>
 
-                    {/* Facebook */}
                     <a
-                      href="<https://facebook.com>"
+                      href="https://facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors text-slate-700 inline-block"
+                      className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white transition hover:bg-amber-400 hover:text-slate-950"
                     >
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                      </svg>
+                      Facebook
                     </a>
 
-                    {/* Youtube */}
                     <a
-                      href="<https://youtube.com>"
+                      href="https://youtube.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors text-slate-700 inline-block"
+                      className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white transition hover:bg-amber-400 hover:text-slate-950"
                     >
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
-                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-                      </svg>
+                      YouTube
                     </a>
-
                   </div>
                 </div>
-
               </CardContent>
             </Card>
 
-            {/* Bloco do Mapa com Leaflet Integrado */}
-            <Card className="overflow-hidden h-[302px] border border-slate-200 shadow-sm relative z-10">
-              <CardContent className="p-0 h-full w-full">
+            <Card className="overflow-hidden border-white/70 bg-white p-0 shadow-xl shadow-orange-950/5">
+              <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4">
+                <div>
+                  <h2 className="text-lg font-black text-slate-950">
+                    Nossa localização
+                  </h2>
+                  <p className="text-sm text-slate-500">
+                    Av. Paulista, 1000 - São Paulo
+                  </p>
+                </div>
+
+                <div className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black text-amber-900">
+                  Aberto hoje
+                </div>
+              </div>
+
+              <CardContent className="h-[340px] p-0">
                 <MapaContato />
               </CardContent>
             </Card>
-
           </div>
 
-          {/* Coluna Direita: Formulário de Envio */}
-          <div>
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-slate-800">
-                  Envie uma Mensagem
-                </CardTitle>
-                <CardDescription>
-                  Preencha o formulário abaixo e retornaremos o contato em até 24 horas úteis.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-5">
+          <Card className="relative overflow-hidden border-0 bg-white p-0 shadow-2xl shadow-orange-950/10">
+            <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-amber-400 via-orange-500 to-red-500" />
 
-                  {/* Campo Nome */}
-                  <div className="space-y-2">
-                    <Label htmlFor="nome">Nome Completo</Label>
-                    <Input id="nome" placeholder="Digite seu nome completo" required />
-                  </div>
+            <CardHeader className="p-7 pb-3">
+              <CardTitle className="text-3xl font-black text-slate-950">
+                Envie uma mensagem
+              </CardTitle>
+              <CardDescription className="text-slate-600">
+                Preencha o formulário e retornaremos em até 24 horas úteis.
+              </CardDescription>
+            </CardHeader>
 
-                  {/* Campo E-mail */}
+            <CardContent className="p-7 pt-3">
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid gap-5 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="email">E-mail</Label>
-                    <Input id="email" type="email" placeholder="seuemail@exemplo.com.br" required />
-                  </div>
-
-                  {/* Campo Assunto */}
-                  <div className="space-y-2">
-                    <Label htmlFor="assunto">Assunto</Label>
-                    <Input id="assunto" placeholder="Ex: Dúvida sobre entrega, sugestão de produtos" required />
-                  </div>
-
-                  {/* Campo Mensagem */}
-                  <div className="space-y-2">
-                    <Label htmlFor="mensagem">Mensagem</Label>
-                    <Textarea
-                      id="mensagem"
-                      placeholder="Digite detalhadamente a sua mensagem..."
-                      className="min-h-[150px] resize-none"
+                    <Label htmlFor="nome" className="font-bold text-slate-800">
+                      Nome completo
+                    </Label>
+                    <Input
+                      id="nome"
+                      placeholder="Seu nome"
                       required
+                      className="h-12 rounded-2xl border-slate-200 bg-slate-50 px-4 focus-visible:ring-amber-400"
                     />
                   </div>
 
-                  {/* Botão de Envio */}
-                  <Button type="submit" className="w-full font-semibold">
-                    Enviar Mensagem
-                  </Button>
+                  <div className="space-y-2">
+                    <Label htmlFor="email" className="font-bold text-slate-800">
+                      E-mail
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="voce@email.com"
+                      required
+                      className="h-12 rounded-2xl border-slate-200 bg-slate-50 px-4 focus-visible:ring-amber-400"
+                    />
+                  </div>
+                </div>
 
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="space-y-2">
+                  <Label htmlFor="assunto" className="font-bold text-slate-800">
+                    Assunto
+                  </Label>
+                  <Input
+                    id="assunto"
+                    placeholder="Reserva, produto, evento, sugestão..."
+                    required
+                    className="h-12 rounded-2xl border-slate-200 bg-slate-50 px-4 focus-visible:ring-amber-400"
+                  />
+                </div>
 
+                <div className="space-y-2">
+                  <Label htmlFor="mensagem" className="font-bold text-slate-800">
+                    Mensagem
+                  </Label>
+                  <Textarea
+                    id="mensagem"
+                    placeholder="Conta pra gente o que você precisa..."
+                    className="min-h-[190px] resize-none rounded-2xl border-slate-200 bg-slate-50 p-4 focus-visible:ring-amber-400"
+                    required
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="h-12 w-full rounded-2xl bg-slate-950 text-base font-black text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-amber-500 hover:text-slate-950"
+                >
+                  Enviar mensagem
+                  <Send className="ml-2 h-4 w-4" />
+                </Button>
+
+                <p className="text-center text-xs text-slate-500">
+                  Seus dados serão usados apenas para responder sua mensagem.
+                </p>
+              </form>
+            </CardContent>
+          </Card>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
